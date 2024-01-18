@@ -40,7 +40,11 @@ const WalletMenuDesktop = ({ isHomePage }: Props) => {
     };
   } else if (isHomePage) {
     buttonStyles = {
-      color: 'white',
+      color: 'blue.400',
+      bg: 'blue.50',
+      _hover: {
+        bg: 'blue.50',
+      },
     };
   } else {
     buttonStyles = {
