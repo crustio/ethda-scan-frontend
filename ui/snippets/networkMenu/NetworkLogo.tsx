@@ -64,7 +64,7 @@ const LogoFallback = ({
 const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
   const { colorMode } = useColorMode();
   const logoSrc =
-    colorMode === "light" ? "./logo-dark.svg" : "./logo-light.svg";
+    colorMode === "light" ? "./logo-light.svg" : "./logo-dark.svg";
 
   const iconSrc = useColorModeValue(
     config.UI.sidebar.icon.default,
@@ -104,29 +104,29 @@ const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
       <Image
         w="auto"
         h="100%"
-        src={logoSrc}
+        // src={logoSrc}
         alt={`${config.chain.name} network logo`}
         fallback={<LogoFallback isCollapsed={isCollapsed} />}
-        display={{
-          base: "block",
-          lg: isCollapsed === false ? "block" : "none",
-          xl: isCollapsed ? "none" : "block",
-        }}
-        style={logoStyle}
+        // display={{
+        //   base: "block",
+        //   lg: isCollapsed === false ? "block" : "none",
+        //   xl: isCollapsed ? "none" : "block",
+        // }}
+        // style={logoStyle}
       />
       {/* small logo */}
       <Image
         w="auto"
         h="100%"
-        src={iconSrc}
+        // src={iconSrc}
         alt={`${config.chain.name} network logo`}
         fallback={<LogoFallback isCollapsed={isCollapsed} isSmall />}
-        display={{
-          base: "none",
-          lg: isCollapsed === false ? "none" : "block",
-          xl: isCollapsed ? "block" : "none",
-        }}
-        style={iconStyle}
+        // display={{
+        //   base: "none",
+        //   lg: isCollapsed === false ? "none" : "block",
+        //   xl: isCollapsed ? "block" : "none",
+        // }}
+        // style={iconStyle}
       />
     </Box>
   );
