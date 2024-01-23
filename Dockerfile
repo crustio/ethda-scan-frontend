@@ -7,7 +7,6 @@ RUN apk add --no-cache libc6-compat
 
 ### APP
 # Install dependencies
-RUN yarn install
 WORKDIR /app
 COPY package.json yarn.lock ./
 RUN apk add git
