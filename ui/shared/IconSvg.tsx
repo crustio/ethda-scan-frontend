@@ -6,17 +6,20 @@ import React from 'react';
 export const href = '/icons/sprite.svg';
 
 export { IconName };
-
-interface Props extends HTMLChakraProps<'div'> {
-  name: IconName;
+/* eslint-disable*/
+interface Props extends HTMLChakraProps<"div"> {
+  name: any | IconName;
   isLoading?: boolean;
 }
 
-const IconSvg = ({ name, isLoading, ...props }: Props, ref: React.ForwardedRef<HTMLDivElement>) => {
+const IconSvg = (
+  { name, isLoading, ...props }: Props,
+  ref: React.ForwardedRef<HTMLDivElement>
+) => {
   return (
-    <Skeleton isLoaded={ !isLoading } display="inline-block" { ...props } ref={ ref }>
+    <Skeleton isLoaded={!isLoading} display="inline-block" {...props} ref={ref}>
       <chakra.svg w="100%" h="100%">
-        <use href={ `${ href }#${ name }` }/>
+        <use href={`${href}#${name}`} />
       </chakra.svg>
     </Skeleton>
   );
