@@ -50,8 +50,8 @@ const LogoFallback = ({
         isSmall
           ? "networks/favicon"
           : colorMode === "light"
-          ? "networks/logo-dark"
-          : "networks/logo-light"
+          ? "networks/logo-light"
+          : "networks/logo-dark"
       }
       width="auto"
       height="100%"
