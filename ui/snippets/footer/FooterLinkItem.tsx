@@ -26,6 +26,7 @@ const FooterLinkItem = ({ icon, iconSize, text, url, isLoading }: Props) => {
       variant="secondary"
       target="_blank"
       fontSize="xs"
+      marginTop={{ base: "20px" }}
     >
       {icon && (
         <Center minW={6} mr={2}>
