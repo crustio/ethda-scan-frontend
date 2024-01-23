@@ -19,7 +19,6 @@ const LogoFallback = ({
   isSmall?: boolean;
 }) => {
   const field = isSmall ? 'icon' : 'logo';
-  const logoColor = useColorModeValue('blue.600', 'white');
 
   const display = isSmall ?
     {
@@ -42,7 +41,7 @@ const LogoFallback = ({
       name={ isSmall ? 'networks/favicon' : 'networks/logo-light' }
       width="auto"
       height="100%"
-      color={ logoColor }
+      color="yellow.500"
       display={ display }
     />
   );

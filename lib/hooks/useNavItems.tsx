@@ -177,6 +177,7 @@ export default function useNavItems(): ReturnType {
       {
         text: 'Other',
         icon: 'gear',
+        isActive: pathname === '/contract-verification',
         subItems: [
           {
             text: 'Verify contract',
