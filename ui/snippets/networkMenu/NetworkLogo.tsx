@@ -1,4 +1,10 @@
-import { Box, Image, useColorModeValue, Skeleton } from '@chakra-ui/react';
+import {
+  Box,
+  Image,
+  useColorModeValue,
+  Skeleton,
+  useColorMode,
+} from '@chakra-ui/react';
 import React from 'react';
 
 import { route } from 'nextjs-routes';
@@ -48,10 +54,10 @@ const LogoFallback = ({
 };
 
 const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
-  const logoSrc = useColorModeValue(
-    config.UI.sidebar.logo.default,
-    config.UI.sidebar.logo.dark || config.UI.sidebar.logo.default,
-  );
+  const { colorMode } = useColorMode();
+  const logoSrc =
+    colorMode === 'light' ? './logo-dark.svg' : './logo-light.svg';
+
   const iconSrc = useColorModeValue(
     config.UI.sidebar.icon.default,
     config.UI.sidebar.icon.dark || config.UI.sidebar.icon.default,
