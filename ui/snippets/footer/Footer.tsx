@@ -134,7 +134,7 @@ const Footer = () => {
             ethda.io
           </Link>
           <Text mt={3} fontSize="xs">
-            BitcoinZK is a ZK layer2 for scaling Bitcoin.
+            EthDA is a scalable Ethereum layer2 Data Availability solution.
           </Text>
         </Box>
       );
