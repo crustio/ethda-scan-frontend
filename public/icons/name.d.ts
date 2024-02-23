@@ -71,6 +71,7 @@
 	| "networks/logo-dark"
 	| "networks/logo-light"
 	| "networks/logo-placeholder"
+	| "networks/zk-logo"
 	| "nft_shield"
 	| "output_roots"
 	| "plus"

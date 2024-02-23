@@ -19,7 +19,7 @@ const FooterLinkItem = ({ icon, iconSize, text, url, isLoading }: Props) => {
 
   return (
     <Link
-      href={url}
+      href={undefined}
       display="flex"
       alignItems="center"
       h="30px"
