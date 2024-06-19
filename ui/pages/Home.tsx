@@ -35,7 +35,7 @@ const Home = () => {
             fontWeight={ 600 }
             color={ config.UI.homepage.plate.textColor }
           >
-            EthDA devnet explorer
+            EthDA Testnet explorer
           </Heading>
           <Box display={{ base: 'none', lg: 'flex' }}>
             { config.features.account.isEnabled && (

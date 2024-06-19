@@ -39,7 +39,7 @@ const VerifiedContractsTableItem = ({ data, isLoading }: Props) => {
         </Flex>
       </Td>
       <Td isNumeric>
-        <Skeleton isLoaded={ !isLoading } display="inline-block" my={ 1 }>
+        <Skeleton isLoaded={ !isLoading } display="inline-block" my={ 1 } width="200px">
           { balance }
         </Skeleton>
       </Td>
